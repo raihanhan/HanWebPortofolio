@@ -1,129 +1,48 @@
-HanWebPortofolio
-Website portofolio pribadi yang dibangun dengan React + Vite untuk menampilkan profil, skill, project, sertifikasi, publikasi, dan kontak dalam tampilan yang minimalis serta profesional.
+# Habib React Portfolio
 
-Preview
-Portfolio ini dirancang untuk:
+Starter portfolio React + Vite yang siap Anda edit dan deploy ke Vercel.
 
-Menjadi personal website yang siap online.
-
-Ditambahkan ke profil LinkedIn.
-
-Menampilkan project unggulan dan identitas profesional secara ringkas.
-
-Memberikan kesan modern, bersih, dan responsif di desktop maupun mobile.
-
-Fitur Utama
-Tampilan minimalis profesional.
-
-Responsive design untuk desktop dan mobile.
-
-Hero section dengan foto profil.
-
-Section tentang saya.
-
-Daftar skill teknis dan soft skill.
-
-Showcase project.
-
-Sertifikasi dengan thumbnail preview dan modal pembesar.
-
-Informasi publikasi dan kontak.
-
-Siap dideploy ke Vercel.
-
-Teknologi
-Project ini menggunakan:
-
-React
-
-Vite
-
-JavaScript
-
-CSS
-
-Struktur Project
-bash
-HanWebPortofolio/
-├── public/
-│   ├── certificates/
-│   ├── images/
-│   └── cv-habib-aulia-raihan.pdf
-├── src/
-│   ├── components/
-│   ├── data/
-│   ├── assets/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles.css
-├── package.json
-└── README.md
-Instalasi dan Menjalankan Project
-Clone repository:
-
-bash
-git clone https://github.com/raihanhan/HanWebPortofolio.git
-Masuk ke folder project:
-
-bash
-cd HanWebPortofolio
-Install dependencies:
-
-bash
+## 1) Install dependency
+```bash
 npm install
-Jalankan di local:
+```
 
-bash
+## 2) Jalankan di local
+```bash
 npm run dev
-Build Production
-Untuk membuat build production:
+```
+Akses biasanya di `http://localhost:5173`.
 
-bash
+## 3) Build production
+```bash
 npm run build
-Untuk preview hasil build:
+```
+Folder hasil build ada di `dist/`.
 
-bash
-npm run preview
-Deploy
-Project ini dapat dideploy dengan mudah menggunakan Vercel:
+## 4) File yang paling sering diedit
+- `src/data/profile.js` → data profil, skill, pendidikan, publikasi, link, dan project
+- `public/assets/foto-profil.jpg` → foto profil
+- `src/styles.css` → styling utama
+- `src/components/` → komponen tampilan
 
-Push project ke GitHub.
+## 5) Deploy ke Vercel via GitHub
+1. Buat repository GitHub
+2. Upload semua file project ini
+3. Login ke Vercel
+4. Klik **Add New Project**
+5. Import repository GitHub Anda
+6. Vercel akan mendeteksi Vite/React dan mengisi build command yang sesuai
+7. Klik deploy
 
-Import repository ke Vercel.
+## 6) Deploy via Vercel CLI
+```bash
+npm install -g vercel
+vercel
+vercel --prod
+```
 
-Gunakan pengaturan default untuk Vite.
-
-Deploy.
-
-Kustomisasi
-Beberapa bagian yang bisa disesuaikan:
-
-Foto profil.
-
-Daftar project.
-
-Link LinkedIn, GitHub, dan kontak.
-
-Sertifikasi dan thumbnail sertifikat.
-
-File CV.
-
-Warna, tipografi, dan isi konten.
-
-Tujuan Repository
-Repository ini digunakan sebagai personal branding dan showcase kemampuan dalam pengembangan web, khususnya untuk kebutuhan:
-
-Lamaran kerja.
-
-Profil LinkedIn.
-
-Portofolio online.
-
-Presentasi project pribadi.
-
-Author
-Habib Aulia Raihan
-Yogyakarta, Indonesia
-
-License
-Repository ini menggunakan lisensi yang tersedia pada file LICENSE.
+## 7) Hal yang perlu diganti sebelum online
+- Ganti semua link `#` di `src/data/profile.js`
+- Tambahkan foto profil ke `public/assets/foto-profil.jpg`
+- Sesuaikan deskripsi project dummy
+- Sesuaikan headline agar cocok dengan posisi yang Anda lamar
